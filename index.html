@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincare Saúde - Assistência Domiciliar de Qualidade</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <div class="logo-icon">L</div>
+                    <span class="logo-text">Lincare Saúde</span>
+                </a>
+
+                <nav>
+                    <a href="#home">Início</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#about">Sobre Nós</a>
+                    <a href="#differentials">Diferenciais</a>
+                    <a href="#contact">Contato</a>
+                    <a href="tel:+5511992953786" class="phone-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        (11) 99295-3786
+                    </a>
+                    <a href="https://wa.me/5511992953786" class="btn-primary">Solicite Orçamento</a>
+                </nav>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="#home" onclick="toggleMobileMenu()">Início</a>
+                <a href="#services" onclick="toggleMobileMenu()">Serviços</a>
+                <a href="#about" onclick="toggleMobileMenu()">Sobre Nós</a>
+                <a href="#differentials" onclick="toggleMobileMenu()">Diferenciais</a>
+                <a href="#contact" onclick="toggleMobileMenu()">Contato</a>
+                <a href="tel:+5511992953786">(11) 99295-3786</a>
+                <a href="https://wa.me/5511992953786" class="btn-primary">Solicite Orçamento</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        <span>Cuidado Humanizado</span>
+                    </div>
+
+                    <h1>Assistência à Saúde no Conforto do Seu Lar</h1>
+                    
+                    <p>A Lincare Saúde oferece soluções completas de assistência domiciliar com profissionais qualificados e atenciosos. Cuidamos de você e sua família com excelência e humanidade.</p>
+
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5511992953786" class="btn-primary">
+                            Solicite Orçamento
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#about" class="btn-secondary">Saiba Mais</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Famílias Atendidas</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Disponibilidade</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="public/medico.jpg" alt="Profissional de saúde oferecendo assistência domiciliar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a Lincare Saúde</h2>
+                <p>Somos uma empresa dedicada a transformar a assistência à saúde domiciliar, oferecendo soluções personalizadas com qualidade e cuidado humanizado.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="public/misao.jpg" alt="Equipe de profissionais de saúde da Lincare">
+                </div>
+
+                <div class="about-text">
+                    <h3>Missão e Visão</h3>
+                    <p>Nossa missão é proporcionar assistência à saúde de qualidade no conforto do lar, promovendo bem-estar, independência e dignidade aos nossos pacientes.</p>
+                    <p>Acreditamos que o cuidado humanizado é fundamental para a recuperação e manutenção da saúde. Por isso, nossa equipe é treinada não apenas em técnicas médicas, mas também em empatia e comunicação.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <p>Equipe multidisciplinar de profissionais qualificados</p>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <p>Atendimento personalizado conforme necessidade do paciente</p>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <p>Disponibilidade 24 horas para emergências</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="values-section">
+                <h3>Nossos Valores</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h4>Excelência</h4>
+                        <p>Profissionais qualificados e treinados para oferecer o melhor cuidado</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h4>Humanidade</h4>
+                        <p>Tratamos cada paciente com respeito, dignidade e empatia</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h4>Confiabilidade</h4>
+                        <p>Serviço consistente e responsável que você pode contar</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                        </div>
+                        <h4>Inovação</h4>
+                        <p>Utilizamos as melhores práticas e tecnologias em saúde</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos uma ampla gama de serviços de assistência à saúde domiciliar adaptados às suas necessidades</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3>Cuidados Pós-Operatórios</h3>
+                    <p>Acompanhamento especializado após cirurgias com monitoramento contínuo da recuperação</p>
+                    <a href="https://wa.me/5511992953786" class="service-link">Saiba mais →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Assistência ao Idoso</h3>
+                    <p>Cuidados personalizados para idosos com atenção à mobilidade e bem-estar</p>
+                    <a href="https://wa.me/5511992953786" class="service-link">Saiba mais →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <path d="M12 1v6m0 6v6"></path>
+                            <path d="M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24"></path>
+                            <path d="M1 12h6m6 0h6"></path>
+                            <path d="M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"></path>
+                        </svg>
+                    </div>
+                    <h3>Administração de Medicamentos</h3>
+                    <p>Controle e administração segura de medicamentos conforme prescrição médica</p>
+                    <a href="https://wa.me/5511992953786" class="service-link">Saiba mais →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Reabilitação Física</h3>
+                    <p>Programas de fisioterapia e reabilitação no conforto do seu lar</p>
+                    <a href="https://wa.me/5511992953786" class="service-link">Saiba mais →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>Cuidados Paliativos</h3>
+                    <p>Atendimento compassivo focado no conforto e qualidade de vida</p>
+                    <a href="https://wa.me/5511992953786" class="service-link">Saiba mais →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Monitoramento de Saúde</h3>
+                    <p>Acompanhamento contínuo de sinais vitais e condições de saúde</p>
+                    <a href="https://wa.me/5511992953786" class="service-link">Saiba mais →</a>
+                </div>
+            </div>
+
+            <div class="service-cta">
+                <h3>Não encontrou o serviço que procura?</h3>
+                <p>Oferecemos soluções personalizadas. Entre em contato conosco para discutir suas necessidades específicas.</p>
+                <a href="https://wa.me/5511992953786" class="btn-primary">Ligar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Estamos aqui para ajudar. Fale conosco sobre suas necessidades de assistência à saúde domiciliar</p>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3>Telefone</h3>
+                    <a href="tel:+5511992953786">(11) 99295-3786</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:contato@lincaresaude.com.br">contato@lincaresaude.com.br</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Localização</h3>
+                    <p>São Paulo, SP</p>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <h2>Pronto para Começar?</h2>
+                <p>Entre em contato conosco hoje mesmo e descubra como a Lincare Saúde pode cuidar de você e sua família.</p>
+                <a href="https://wa.me/5511992953786" class="btn-primary">Solicite um Orçamento Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <div class="logo-icon">L</div>
+                        <span style="font-weight: bold; font-size: 18px;">Lincare Saúde</span>
+                    </div>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px; margin-top: 16px;">
+                        Soluções de qualidade em assistência à saúde com cuidado humanizado.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="tel:+5511992953786">(11) 99295-3786</a></li>
+                        <li><a href="mailto:contato@lincaresaude.com.br">contato@lincaresaude.com.br</a></li>
+                        <li style="color: rgba(255, 255, 255, 0.7);">São Paulo, SP</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Horário de Atendimento</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px;">
+                        Disponível 24 horas<br>
+                        7 dias por semana
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Lincare Saúde. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
