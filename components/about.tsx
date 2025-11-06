@@ -1,24 +1,6 @@
 import { CheckCircle2 } from "lucide-react"
 
 export default function About() {
-  const values = [
-    {
-      title: "Excelência",
-      description: "Profissionais qualificados e treinados para oferecer o melhor cuidado",
-    },
-    {
-      title: "Humanidade",
-      description: "Tratamos cada paciente com respeito, dignidade e empatia",
-    },
-    {
-      title: "Confiabilidade",
-      description: "Serviço consistente e responsável que você pode contar",
-    },
-    {
-      title: "Inovação",
-      description: "Utilizamos as melhores práticas e tecnologias em saúde",
-    },
-  ]
 
   return (
     <section id="about" className="w-full py-20 md:py-32 bg-background">
@@ -39,7 +21,7 @@ export default function About() {
           {/* Left Image */}
           <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg fade-in">
             <img
-              src="/placeholder.svg?key=about-team"
+              src="/misao.jpg"
               alt="Equipe de profissionais de saúde da Lincare"
               className="w-full h-full object-cover"
             />
@@ -51,13 +33,11 @@ export default function About() {
             <h3 className="text-2xl md:text-3xl font-bold text-foreground">Missão e Visão</h3>
 
             <p className="text-base text-muted-foreground leading-relaxed">
-              Nossa missão é proporcionar assistência à saúde de qualidade no conforto do lar, promovendo bem-estar,
-              independência e dignidade aos nossos pacientes.
+              Ser ousada na entrega em soluções de saúde, priorizando uma assistência humanizada, com acolhimento, qualidade, segurança e responsabilidade.
             </p>
 
             <p className="text-base text-muted-foreground leading-relaxed">
-              Acreditamos que o cuidado humanizado é fundamental para a recuperação e manutenção da saúde. Por isso,
-              nossa equipe é treinada não apenas em técnicas médicas, mas também em empatia e comunicação.
+              Ser referência na atenção domiciliar pela excelência e inovação nos serviços prestados, buscando o crescimento sustentável.
             </p>
 
             <div className="space-y-3 pt-4">
@@ -77,20 +57,41 @@ export default function About() {
           </div>
         </div>
 
-        {/* Values Grid */}
+        {/* Values Section */}
         <div className="bg-primary/5 rounded-2xl p-8 md:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-12 text-center">Nossos Valores</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <div key={index} className="space-y-3 fade-in">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                  <CheckCircle2 className="w-6 h-6 text-white" />
-                </div>
-                <h4 className="text-lg font-semibold text-foreground">{value.title}</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">{value.description}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="space-y-6 fade-in">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground">Nossos Valores</h3>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  "Amor",
+                  "Família",
+                  "Cuidar",
+                  "Confiança",
+                  "Ética e Responsabilidade",
+                  "Evolução contínua",
+                  "Disseminação do conhecimento",
+                  "Sustentabilidade",
+                  "Diversidade e Inclusão",
+                ].map((value, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                    <p className="text-sm text-foreground">{value}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Right Image */}
+            <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg fade-in">
+              <img
+                src="/medico.jpg"
+                alt="Coração representando os valores da Lincare"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+            </div>
           </div>
         </div>
       </div>
