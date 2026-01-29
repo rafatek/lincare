@@ -1,0 +1,13 @@
+# Netlify redirects for Next.js app
+/* /index.html 200
+
+# Redirect www to non-www
+www.lincare.netlify.app/* https://lincare.netlify.app/:splat 301
+
+# Security headers
+/* /index.html 200
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
